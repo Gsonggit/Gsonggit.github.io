@@ -1,9 +1,10 @@
 .head{
     margin-left: 40px;
-    font-size: 60px
+    font-size: 30px
 }
 
 .foot{
+    height: 3 cm;
     background-color: black
 }
 
