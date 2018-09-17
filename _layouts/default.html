@@ -1,44 +1,34 @@
+<!-- 首页及其他页面的布局-Layout -->
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>路过音乐的私人博客</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="路过音乐 QQ532590979">
-    <link rel="shortcup icon" href="/images/icon/bitbug_favicon.ico">
-    <link rel="stylesheet" type="text/css" href="/css/default.css">
+<!-- 引入head标签 -->
+{% include head.html %}
 </head>
 <body>
-    <div class='head'>
-        <h1>路过音乐 https://www.lgyysblog.com</h1>
-    </div>
-    <div class="container" style="background-color: rgb(112, 205, 236)">
-        <ul>
-            <li><a href="/index.html">首页</a></li>
-            <li><a href="/_posts/origion.html">个人原创</a></li>
-            <li>他人经典</li>
-            <li>娱乐</li>
-            <li>其它</li>        
-        </ul>
-    </div>
-    <hr>
-    <hr>
-    <div style="height: 20cm; width: 30cm">
-        
-        {{content}}
-    
-    
-    
-    
-    
-    </div>
-    
+<!-- 页面主体 -->
+{{ content }}
 
-    <div>
-        <footer class="foot">
-            <div class="copyright" style="text-align:center;color: white"> © 路过音乐 2018 - </div>
-        </footer>
-    </div>
+<!-- 引用wow.js的动画效果 -->
+<script src="/assets/js/wow.js"></script>
+<script>
+    var wow = new WOW({
+        boxClass: 'wow',
+        animateClass: 'animated',
+        // offset: 5,
+        mobile: true,
+        live: true
+    });
+    wow.init();
+</script>
+<!-- 页面刷新回到顶部 -->
+<script>
+    window.onbeforeunload = function(){
+        //刷新后页面自动回到顶部
+        document.documentElement.scrollTop = 0;  //ie下
+        document.body.scrollTop = 0;  //非ie
+    }
+</script>
+
 </body>
 </html>

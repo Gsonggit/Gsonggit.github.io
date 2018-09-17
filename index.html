@@ -1,6 +1,18 @@
 ---
 layout: default
+title: your awesome title
+page-title: your awesome page-title.
+home-title: your awesome home-title.
+description: description
 ---
 
-<p style="text-align: center;font-size: 40 px">博客正在修整……敬请期待</p>
-
+{% include header.html %}
+{% include boot.html %}
+<main>
+    {% include title.html %}
+    <ul class="post-list">
+      {% include posts_paginator.html %}
+    </ul>
+</main>
+{% include pageNav.html %}
+{% include footer.html %}
