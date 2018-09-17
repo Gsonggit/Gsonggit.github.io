@@ -1,7 +1,7 @@
 # Site settings 配置站点
 title: '路过音乐的私人博客'
-description: 'your web description'
-keywords: 'your web keywords, another keywords'
+description: '存在即合理——黑格尔'
+keywords: '学习是学习,娱乐是娱乐'
 url: 'https://www.lgyysblog.com' # your host
 
 # nav 中文字符空格：&emsp;
@@ -15,12 +15,12 @@ nav: # 最佳体验 六个标签 且最好每个标签不超过4中文字
 # 博主
 author: true
 name: '路过音乐'
-NickName: 'your awesome nickname'
-webtitle: 'your awesome webtitle'
-bio: 'your awesome bio'
+NickName: 'Gsong'
+webtitle: '路过音乐的私人博客'
+bio: '人生如戏，引为知己'
 about: true
 aboutyou: '个人Github博客，入行新手，请多关照！'
-portraits: '/assets/profile.jpeg' # your portraits image file path
+portraits: '/assets/myavater.jpg' # your portraits image file path
 
 # SNS
 SNS: true
@@ -40,7 +40,7 @@ SNS-icon: #['facebook', 'weibo', 'QQ', 'github', 'Dribbble', 'twitter', 'instagr
   twitch: ''
 
 # 分页
-paginate: 2
+paginate: 5
 paginatepath: ['page:num']
 
 # since
