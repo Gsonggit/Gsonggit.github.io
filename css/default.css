@@ -6,3 +6,11 @@
 .foot{
     background-color: black
 }
+
+li{
+    display:inline;
+    font-family: fantasy;
+    font-size: 30px  ;
+    padding: 0 ;
+    margin-left: 40px
+}
