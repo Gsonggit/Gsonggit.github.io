@@ -20,7 +20,7 @@ webtitle: '路过音乐的私人博客'
 bio: '人生如戏，引为知己'
 about: true
 aboutyou: '个人Github博客，入行新手，请多关照！'
-portraits: '/assets/myavater.jpg' # your portraits image file path
+portraits: '/assets/myavatar.jpg' # your portraits image file path
 
 # SNS
 SNS: true
