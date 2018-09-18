@@ -1,7 +1,5 @@
 # Site settings 配置站点
 title: '路过音乐的私人博客'
-description: '存在即合理——黑格尔'
-keywords: '学习是学习,娱乐是娱乐'
 url: 'https://www.lgyysblog.com' # your host
 
 # nav 中文字符空格：&emsp;
@@ -18,27 +16,25 @@ author: true
 name: '路过音乐'
 NickName: 'Gsong'
 webtitle: '路过音乐的私人博客'
-bio: '人生如戏，引为知己'
+bio: 'Was vernünftig ist, das ist wirklich; und was wirklich ist, das ist vernünftig(存在即合理)——黑格尔'
 about: true
-aboutyou: '个人Github博客，入行新手，请多关照！'
+aboutyou: '个人Pages.Github博客，入行新手，请多关照！'
 portraits: '/assets/myavatar.jpg' # your portraits image file path
 
 # SNS
 SNS: true
 SNS-icon: #['facebook', 'weibo', 'QQ', 'github', 'Dribbble', 'twitter', 'instagram', 'weixin']
-  mail: '532590979@qq.com'
-  weixin: '' # your wechat image file path
-  QQ: '' # your QQ image file path
+  mail: 'mailto: 532590979@qq.com'
+  weixin: '/assets/images/IMG_0370.JPG' # your wechat image file path
+  QQ: '/assets/images/IMG_0371.JPG' # your QQ image file path
   weibo: ''
   instagram: ''
   twitter: ''
-  github: ''
+  github: 'https://github.com/Gsonggit'
   Dribbble: ''
   facebook: ''
   Google: ''
   zhihu: ''
-  juejin: ''
-  twitch: ''
 
 # 分页
 paginate: 5
@@ -55,7 +51,7 @@ kramdown:
 # 代码高亮 使用rouge
 highlighter: rouge
 # 代码高亮主题使用pygments主题: autumn\ default\ emacs\ friendly\ manni\ murphy\ pastie\ perldoc\ tango 任选一个你喜欢的主题名称填在下面的单引号中
-pygmentsTheme: 'default'
+pygmentsTheme: 'autumn'
 
 # 友情链接
 friends:
@@ -67,7 +63,7 @@ disqus: false
 disqus_url: '' # https://abc.disqus.com/embed.js
 # 来必力评论
 livere: true
-livere_uid: 'MTAyMC8zNDI2OS8xMDgwNg==' # MTAyMC8zNDI2OS8xMDgwNg==
+livere_uid: 'MTAyMC8zOTgxMy8xNjM0MA==' # 来必力评论uid
 # Gitment评论 OAuth Application
 Gitment: false
 Gitment_owner: ''  # github用户名
@@ -81,10 +77,7 @@ social-share-items: ['qq', 'wechat', 'weibo', 'twitter', 'facebook']
 
 # 百度统计 在baidu-url里填写自己相关的url代码
 baidu: true
-baidu-url: ''
-# 谷歌分析 在google-ID里填写自己在谷歌分析获得的追踪ID
-google: false
-google-ID: ''
+baidu-url: 'e72f1e75cf3b03f1c4aae39704fbb12b'
 
 # 博客头信息备选颜色（该部分在站点中不充当站点变量，将其写在post的头信息中用来充当页面变量）
 color: rgb(154,133,255) rgb(255,90,90) rgb(255,210,32) rgb(98,170,255)

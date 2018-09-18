@@ -1,0 +1,17 @@
+.head{
+    margin-left: 40px;
+    font-size: 30px
+}
+
+.foot{
+    height: 3 cm;
+    background-color: black
+}
+
+li{
+    display:inline;
+    font-family: fantasy;
+    font-size: 30px  ;
+    padding: 0 ;
+    margin-left: 40px
+}
