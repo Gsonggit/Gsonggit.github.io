@@ -40,6 +40,7 @@ var _hmt = _hmt || [];
 
 <!-- Android Lolipop Theme Color -->
 <meta name="theme-color" content=" rgb(255,210,32) ">
+
 </head>
 <body>
 
@@ -144,11 +145,11 @@ var _hmt = _hmt || [];
   
 
   <!-- 文章内容 -->
-  <div>
-    <div style="display:block;float:left; height: 550px;width: 550px">
-        <form action="/" method="post" style="height: 550px;width: 550px">
-            <fieldset style="height: 550px;width: 550px">
-                <legend>欢迎使用娱乐推荐系统</legend>
+  <main>
+    <div class="Inform" style="float:left;height:500px;width: 550px;">
+        <form id="datatoser" action="/myorigion.html" method="post" target="fram1">
+            <fieldset>
+                <legend>欢迎使用娱乐推荐系统 , 当前正在使用： 0 人</legend>
                 <table>
                     <tr>
                         <td>
@@ -161,10 +162,10 @@ var _hmt = _hmt || [];
                         </td>
                     </tr>
                     <tr>
-                        <td>关键词<input type="text" name='keywords'></td>
+                        <td>关键词<input type="text" name='keywords' placeholder="以空格分开"></td>
                     </tr>
                     <tr>
-                        <td>说明！<input type="textarea" readonly></td>
+                        <td>说明<p>afdfafsaafdafdaffaaafaafa</p></td>
                     </tr>
                     <tr>
                         <td style='text-align: right'><input type="submit" value="开始推荐"></td>
@@ -172,16 +173,23 @@ var _hmt = _hmt || [];
                 </table>
             </fieldset>
         </form>
+
     </div>
-    <div style="display:block;margin-left: 50px">
-            <iframe src="/txserverresult.html" height="450" width="550" style="display:inline-block"></iframe>
+    <div class="Outform" style="float:right">
+
+            <iframe name="fram1" src="https://www.baidu.com" height="450" width="550" style="display:inline-block"></iframe>
+            <form action="/" method="POST">
+                <input type="submit" value="查看详细">   <input type="submit" value="再次推荐">
+            </form>
     </div>
+
+</main>
+
+
 
 </div>
+<!-- 引入share模块 -->
 
-
-  <!-- 引入share模块 -->
-  
   <div class="social-share-wrapper">
     <div class="social-share"></div>
   </div>
@@ -217,8 +225,6 @@ var _hmt = _hmt || [];
     wechatQrcodeHelper: '期待在朋友圈见到这篇文章'
   });
 </script>
-
-</div>
 
 <!-- 底部锚点 -->
 <a id="htmldown" name="htmldown"></a>

@@ -5,6 +5,7 @@
 <!-- 引入head标签 -->
 {% include head.html %}
 {% include androidColor.html %}
+
 </head>
 <body>
 
@@ -32,10 +33,10 @@
 
   <!-- 文章内容 -->
   {{ page.content }}
-  <!-- 引入share模块 -->
-  {% include share.html %}
-</div>
 
+</div>
+<!-- 引入share模块 -->
+{% include share.html %}
 <!-- 底部锚点 -->
 <a id="htmldown" name="htmldown"></a>
 <!-- 引入评论模块 -->
