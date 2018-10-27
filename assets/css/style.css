@@ -33,18 +33,11 @@ a{
     height: 100%;
     width: auto;
     font-size: 35px;
-<<<<<<< HEAD
     line-height: 60px;
     float: left;
     margin-left: 30px;
 }
 
-=======
-    line-height: 0px;
-    float: left;
-    margin-left: 25px;
-}
->>>>>>> c2f69c87d55c7575bca9bad0b9fac79f36145858
 .top-nav{
     height: 100%;
     width: auto;
