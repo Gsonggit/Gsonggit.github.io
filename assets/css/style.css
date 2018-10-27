@@ -33,7 +33,7 @@ a{
     height: 100%;
     width: auto;
     font-size: 35px;
-    line-height: 60px;
+    line-height: 0px;
     float: left;
     margin-left: 30px;
 }
