@@ -5,7 +5,6 @@ author: true
 name: '路过音乐'
 NickName: 'Gsong'
 webtitle: '路过音乐的私人博客'
-about: true
 aboutyou: '个人Pages.Github博客，入行新手，请多关照！'
 portraits: '/assets/myavatar.jpg' # 照片
 
@@ -16,7 +15,7 @@ nav: # 最佳体验 六个标签 且最好每个标签不超过4中文字
   他人经典: '/otherclassical.html'
   娱乐主义: '/entertainment.html'
   关于博主: '/about.html'
-  其他: '/other.html'
+  设置: '/configure.html'
 
 # SNS
 SNS: true

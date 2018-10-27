@@ -6,7 +6,7 @@
       <nav class="top-nav">
           <ul>
               {% for i in site.nav %}
-                <li><a href="{{ i[1] }}" >{{ i[0] }}</a></li>
+                <li><a href="{{ i[1] }}"  {% if page.url == {{i[1]}} %} style="color: red;font-size:20px" {% endif %} >{{ i[0] }}</a></li>
               {% endfor %}
           </ul>
       </nav>

@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="/assets/css/style.css">
 <link rel="stylesheet" href="/assets/css/media.css">
 <link rel="stylesheet" href="/assets/css/animate.min.css">
-<link rel="stylesheet" href="/assets/css/pygments/pygments_default.css">
+<link rel="stylesheet" href="/assets/css/pygments/pygments_autumn.css">
 <link rel="stylesheet" href="/assets/css/github-markdown.css">
 <!-- SNS-icon -->
 <script src="/assets/fonts/sns/iconfont.js"></script>
@@ -31,7 +31,7 @@
 var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?";
+  hm.src = "https://hm.baidu.com/hm.js?e72f1e75cf3b03f1c4aae39704fbb12b";
   var s = document.getElementsByTagName("script")[0];
   s.parentNode.insertBefore(hm, s);
 })();
@@ -40,46 +40,45 @@ var _hmt = _hmt || [];
 
 <!-- Android Lolipop Theme Color -->
 <meta name="theme-color" content=" rgb(255,210,32) ">
+
 </head>
 <body>
 
 <!-- 顶部锚点 -->
 <a id="htmlup" name="htmlup"></a>
 <!-- 引入博文顶部选项 -->
-
-<header id="post-header" style="background-color:rgb(255,210,32);">
+<header id="index-header">
   <div class="top-center">
       <div class="logo">
-          <a href="/" title="my awesome webtitle" style="color: white;">路过音乐的私人博客</a>
+          <p style="text-shadow: 0 0 2px black,5px 5px 5px black;color: coral;font-family: Pacifico" >路过音乐的私人博客</p>
       </div>
       <nav class="top-nav">
           <ul>
               
-                <li><a href="/" style="color: white;">首页</a></li>
+                <li><a href="/"   >首页</a></li>
               
-                <li><a href="/myorigion.html" style="color: white;">个人原创</a></li>
+                <li><a href="/myorigion.html"   >个人原创</a></li>
               
-                <li><a href="/otherclassical.html" style="color: white;">他人经典</a></li>
+                <li><a href="/otherclassical.html"   >他人经典</a></li>
               
-                <li><a href="/entertainment.html" style="color: white;">娱乐主义</a></li>
+                <li><a href="/entertainment.html"   >娱乐主义</a></li>
               
-                <li><a href="/about.html" style="color: white;">关于博主</a></li>
+                <li><a href="/about.html"   >关于博主</a></li>
               
-                <li><a href="/other.html" style="color: white;">其他</a></li>
+                <li><a href="/configure.html"   >设置</a></li>
               
           </ul>
       </nav>
       <div id="top-boot">
-        <a href="javascript:;" id="boot1" style="display:block;" onclick="document.getElementById('boot-area').style.display='block';document.getElementById('boot1').style.display='none';document.getElementById('boot2').style.display='block';"><img src="/assets/boot_white.png" alt=""></a>
-        <a href="javascript:;" id="boot2" style="display: none;" onclick="document.getElementById('boot-area').style.display='none';document.getElementById('boot1').style.display='block';document.getElementById('boot2').style.display='none';"><img src="/assets/boot_white.png" alt=""></a>
+        <a href="javascript:;" id="boot1" style="display:block;" onclick="document.getElementById('boot-area').style.display='block';document.getElementById('boot1').style.display='none';document.getElementById('boot2').style.display='block';"><img src="/assets/boot.png" alt=""></a>
+        <a href="javascript:;" id="boot2" style="display: none;" onclick="document.getElementById('boot-area').style.display='none';document.getElementById('boot1').style.display='block';document.getElementById('boot2').style.display='none';"><img src="/assets/boot.png" alt=""></a>
       </div>
   </div>
 
 </header>
 
-
 <!-- 引入移动下拉选项 -->
-<div id="boot-area">
+<!-- <div id="boot-area">
     <ul>
         
           <a href="/"><li>首页</li></a>
@@ -92,15 +91,15 @@ var _hmt = _hmt || [];
         
           <a href="/about.html"><li>关于博主</li></a>
         
-          <a href="/other.html"><li>其他</li></a>
+          <a href="/configure.html"><li>设置</li></a>
         
     </ul>
 </div>
-
+ -->
 <!-- 引入博文顶部样式 -->
-<!-- 版本一 垃圾 -->
+<!-- <!-- 版本一 垃圾 -->
 <!-- <div class="wow fadeIn top" data-wow-duration="3.5s" >
-    <span class="wow fadeInUp" data-wow-delay="0.2s">第一次试验</span>
+    <span class="wow fadeInUp" data-wow-delay="0.2s">基于爬虫的娱乐推荐系统</span>
     <span class="wow fadeInUp" data-wow-delay="0.4s"></span>
     <span class="wow fadeInUp" data-wow-delay="0.4s"></span>
     <span class="wow fadeInUp" data-wow-delay="0.6s">作者&nbsp;&nbsp;|&nbsp;&nbsp;路过音乐</span>
@@ -117,15 +116,15 @@ var _hmt = _hmt || [];
     
   </div>
   <div class="post-titlearea">
-    <span class="wow fadeInUp" data-wow-delay="0.2s">第一次试验</span>
+    <span class="wow fadeInUp" data-wow-delay="0.2s">基于爬虫的娱乐推荐系统</span>
     <!-- <span class="wow fadeInUp" data-wow-delay="0.4s"></span> -->
     <!-- <span class="wow fadeInUp" data-wow-delay="0.4s"></span> -->
     <!-- <span class="wow fadeInUp" data-wow-delay="0.6s">作者&nbsp;&nbsp;|&nbsp;&nbsp;路过音乐</span> -->
   </div>
   <div class="right-area">
     
-      <a href="javascript:;" class="btn bounceInRight self-animated" onmouseover="showRight();this.style.color='rgb(255,210,32)';" onmouseout="goneRight();this.style.color='rgba(0,0,0,.2)';">></a>
-      <div id="right-tab" style="display:none;"><span class="right-san"></span><span class="right-main" style="color:rgb(255,210,32);"><sapn class="main">没有下一页咯</sapn></span></div>
+      <a href="/origion/2018/09/19/secondtest.html" class="btn bounceInRight self-animated" onmouseover="showRight();this.style.color='rgb(255,210,32)';" onmouseout="goneRight();this.style.color='rgba(0,0,0,.2)';">></a>
+      <div id="right-tab" style="display:none;"><span class="right-san"></span><span class="right-main" style="color:rgb(255,210,32);"><sapn class="main">改进博客页面结构</sapn></span></div>
     
   </div>
 
@@ -135,24 +134,62 @@ var _hmt = _hmt || [];
       <a href="javascript:;" class="leftchange" style="border-right: 1px solid rgb(255,210,32);border-bottom: 2px solid rgb(255,210,32);"><span><br>没有上一篇咯</span></a>
     
     
-      <a href="javascript:;" class="rightchange" style="border-left: 1px solid rgb(255,210,32);border-bottom: 2px solid rgb(255,210,32);"><span><br>没有下一篇咯</span></a>
+      <a href="/origion/2018/09/19/secondtest.html" class="rightchange" style="border-left: 1px solid rgb(255,210,32);border-bottom: 2px solid rgb(255,210,32);"><span>下一篇<br><br>改进博客页面结构</span></a>
     
   </div>
 </div>
 
-
+ -->
 <div class="markdown-body fadeInUp animated">
 
   
 
   <!-- 文章内容 -->
-  <h4 id="第一次试验">第一次试验</h4>
-<hr />
-<h2 id="观察图像">观察图像</h2>
-<h1 id="这真是有点东西需要">这真是有点东西需要</h1>
+  <main>
+    <div class="Inform" style="float:left;height:500px;width: 550px;">
+        <form id="datatoser" action="http://119.29.230.61:7777/login/" method="post" target="fram1">
+            <fieldset>
+                <legend>欢迎使用娱乐推荐系统 , 当前正在使用： 0 人</legend>
+                <table>
+                    <tr>
+                        <td>
+                            类型
+                            <input type="radio" name='type' value='movie' checked="checked">电影
+                            <input type="radio" name='type' value='game'>游戏
+                            <input type="radio" name='type' value='music'>音乐
+                            <input type="radio" name='type' value='TVseriel'>电视剧
+                            <input type="radio" name='type' value='novel'>小说
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>关键词<input type="text" name='keywords' placeholder="以空格分开"></td>
+                    </tr>
+                    <tr>
+                        <td>说明<p>afdfafsaafdafdaffaaafaafa</p></td>
+                    </tr>
+                    <tr>
+                        <td style='text-align: right'><input type="submit" target="fram1" value="开始推荐"></td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
 
-  <!-- 引入share模块 -->
-  
+    </div>
+    <div class="Outform" style="float:right">
+
+            <iframe name="fram1" src="http://119.29.230.61:7777" height="450" width="550" style="display:inline-block"></iframe>
+            <form action="/" method="POST">
+                <input type="submit" value="查看详细">   <input type="submit" value="再次推荐">
+            </form>
+    </div>
+
+</main>
+
+
+
+</div>
+<!-- 引入share模块 -->
+
   <div class="social-share-wrapper">
     <div class="social-share"></div>
   </div>
@@ -189,8 +226,6 @@ var _hmt = _hmt || [];
   });
 </script>
 
-</div>
-
 <!-- 底部锚点 -->
 <a id="htmldown" name="htmldown"></a>
 <!-- 引入评论模块 -->
@@ -198,7 +233,7 @@ var _hmt = _hmt || [];
 
 
     <section class="post-footer-item comment">
-      <div id="lv-container" data-id="city" data-uid="MTAyMC8zNDI2OS8xMDgwNg=="></div>
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zOTgxMy8xNjM0MA=="></div>
     </section>
 
     <!-- 来必力City版安装代码 -->

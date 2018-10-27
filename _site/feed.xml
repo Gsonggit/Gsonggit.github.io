@@ -1,4 +1,44 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-09-18T22:45:56+08:00</updated><id>http://localhost:4000/</id><title type="html">路过音乐的私人博客</title><subtitle>存在即合理——黑格尔</subtitle><author><name>true</name></author><entry><title type="html">第一次试验</title><link href="http://localhost:4000/2018/09/18/firstBlood.html" rel="alternate" type="text/html" title="第一次试验" /><published>2018-09-18T00:00:00+08:00</published><updated>2018-09-18T00:00:00+08:00</updated><id>http://localhost:4000/2018/09/18/firstBlood</id><content type="html" xml:base="http://localhost:4000/2018/09/18/firstBlood.html">&lt;h4 id=&quot;第一次试验&quot;&gt;第一次试验&lt;/h4&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-09-23T19:07:40+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">路过音乐的私人博客</title><author><name>true</name></author><entry><title type="html">基于爬虫的娱乐推荐系统</title><link href="http://localhost:4000/entertain/2018/09/19/entertainv1.html" rel="alternate" type="text/html" title="基于爬虫的娱乐推荐系统" /><published>2018-09-19T00:00:00+08:00</published><updated>2018-09-19T00:00:00+08:00</updated><id>http://localhost:4000/entertain/2018/09/19/entertainv1</id><content type="html" xml:base="http://localhost:4000/entertain/2018/09/19/entertainv1.html">&lt;main&gt;
+    &lt;div class=&quot;Inform&quot; style=&quot;float:left;height:500px;width: 550px;&quot;&gt;
+        &lt;form id=&quot;datatoser&quot; action=&quot;http://119.29.230.61:7777/login/&quot; method=&quot;post&quot; target=&quot;fram1&quot;&gt;
+            &lt;fieldset&gt;
+                &lt;legend&gt;欢迎使用娱乐推荐系统 , 当前正在使用： 0 人&lt;/legend&gt;
+                &lt;table&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;
+                            类型
+                            &lt;input type=&quot;radio&quot; name='type' value='movie' checked=&quot;checked&quot;&gt;电影
+                            &lt;input type=&quot;radio&quot; name='type' value='game'&gt;游戏
+                            &lt;input type=&quot;radio&quot; name='type' value='music'&gt;音乐
+                            &lt;input type=&quot;radio&quot; name='type' value='TVseriel'&gt;电视剧
+                            &lt;input type=&quot;radio&quot; name='type' value='novel'&gt;小说
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;关键词&lt;input type=&quot;text&quot; name='keywords' placeholder=&quot;以空格分开&quot;&gt;&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;说明&lt;p&gt;afdfafsaafdafdaffaaafaafa&lt;/p&gt;&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td style='text-align: right'&gt;&lt;input type=&quot;submit&quot; target=&quot;fram1&quot; value=&quot;开始推荐&quot;&gt;&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+            &lt;/fieldset&gt;
+        &lt;/form&gt;
+
+    &lt;/div&gt;
+    &lt;div class=&quot;Outform&quot; style=&quot;float:right&quot;&gt;
+
+            &lt;iframe name=&quot;fram1&quot; src=&quot;http://119.29.230.61:7777&quot; height=&quot;450&quot; width=&quot;550&quot; style=&quot;display:inline-block&quot;&gt;&lt;/iframe&gt;
+            &lt;form action=&quot;/&quot; method=&quot;POST&quot;&gt;
+                &lt;input type=&quot;submit&quot; value=&quot;查看详细&quot;&gt;   &lt;input type=&quot;submit&quot; value=&quot;再次推荐&quot;&gt;
+            &lt;/form&gt;
+    &lt;/div&gt;
+
+&lt;/main&gt;</content><author><name>路过音乐</name></author><category term="test3" /><summary type="html">欢迎使用娱乐推荐系统 , 当前正在使用： 0 人 类型 电影 游戏 音乐 电视剧 小说 关键词 说明afdfafsaafdafdaffaaafaafa</summary></entry><entry><title type="html">改进博客页面结构</title><link href="http://localhost:4000/origion/2018/09/19/secondtest.html" rel="alternate" type="text/html" title="改进博客页面结构" /><published>2018-09-19T00:00:00+08:00</published><updated>2018-09-19T00:00:00+08:00</updated><id>http://localhost:4000/origion/2018/09/19/secondtest</id><content type="html" xml:base="http://localhost:4000/origion/2018/09/19/secondtest.html">&lt;h4 id=&quot;第二次试验&quot;&gt;第二次试验&lt;/h4&gt;
+&lt;hr /&gt;
+&lt;p&gt;利用页面进行跳转操作&lt;/p&gt;</content><author><name>路过音乐</name></author><category term="test2" /><summary type="html">第二次试验 利用页面进行跳转操作</summary></entry><entry><title type="html">第一次试验</title><link href="http://localhost:4000/origion/2018/09/18/firstBlood.html" rel="alternate" type="text/html" title="第一次试验" /><published>2018-09-18T00:00:00+08:00</published><updated>2018-09-18T00:00:00+08:00</updated><id>http://localhost:4000/origion/2018/09/18/firstBlood</id><content type="html" xml:base="http://localhost:4000/origion/2018/09/18/firstBlood.html">&lt;h4 id=&quot;第一次试验&quot;&gt;第一次试验&lt;/h4&gt;
 &lt;hr /&gt;
 &lt;h2 id=&quot;观察图像&quot;&gt;观察图像&lt;/h2&gt;
 &lt;h1 id=&quot;这真是有点东西需要&quot;&gt;这真是有点东西需要&lt;/h1&gt;</content><author><name>路过音乐</name></author><category term="test" /><summary type="html">第一次试验 观察图像 这真是有点东西需要</summary></entry></feed>
