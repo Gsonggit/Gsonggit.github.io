@@ -11,7 +11,7 @@ description:
 {% include header.html %}
 <main>
       <ul class="post-list">
-          {% for category in site.categories %}
+          {% for category in paginator.posts.categories %}
             {% if category[0] == 'origion' %}
               {% for post in category[1] %}
               <a href="{{ post.url }}">
