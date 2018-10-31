@@ -9,9 +9,9 @@ tags: Github blog
 ---
 
 
-***创建博客***  2018/9/18
-1.在Github上创建新仓库，名字为**[用户名].github.io**
-2.了解并使用[Jekyll](https://www.jekyll.com.cn/)
-3.修改模版，进行个性化设置
-参考链接：<a href='https://blog.csdn.net/lady_zhou/article/details/52041098' target="_blank"> (https://blog.csdn.net/lady_zhou/article/details/52041098)</a>
+***创建博客***  2018/9/18  
+1.在Github上创建新仓库，名字为**[用户名].github.io**  
+2.了解并使用[Jekyll](https://www.jekyll.com.cn/)  
+3.修改模版，进行个性化设置  
+参考链接：<a href='https://blog.csdn.net/lady_zhou/article/details/52041098' target="_blank"> (https://blog.csdn.net/lady_zhou/article/details/52041098)</a>  
          <a href='https://blog.csdn.net/lady_zhou/article/details/52041098' target="_blank"> (https://blog.csdn.net/u013553529/article/details/54588010)</a>
