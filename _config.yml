@@ -1,10 +1,10 @@
 # Site settings 配置站点
-title: '路过音乐的私人博客'
+title: '路过音乐的博客'
 url: 'https://www.lgyysblog.com' # your host
 author: true
 name: '路过音乐'
 NickName: 'Gsong'
-webtitle: '路过音乐的私人博客'
+webtitle: '路过音乐的博客'
 aboutyou: '个人Pages.Github博客，入行新手，请多关照！'
 portraits: '/assets/myavatar.jpg' # 照片
 

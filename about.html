@@ -21,7 +21,8 @@ description:
         {% endif %}
         {% if site.SNS %}
           {% for sns-icon in site.SNS-icon %}
-            <a href="{{ sns-icon[1] }}" title="{{ sns-icon[0] }}">
+            <a href="{{ sns-icon[1] }}" title="{{ sns-icon[0] }}" class="imgSSS">
+            
               <svg class="icon" aria-hidden="true">
                 <use xlink:href="#icon-{{ sns-icon[0] }}"></use>
               </svg>
