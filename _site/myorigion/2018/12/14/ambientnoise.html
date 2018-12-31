@@ -99,7 +99,7 @@ var _hmt = _hmt || [];
 <!-- 引入博文顶部样式 -->
 <!-- <!-- 版本一 垃圾 -->
 <!-- <div class="wow fadeIn top" data-wow-duration="3.5s" >
-    <span class="wow fadeInUp" data-wow-delay="0.2s">创建博客历程（持续更新）</span>
+    <span class="wow fadeInUp" data-wow-delay="0.2s">地震背景噪声处理（MSnoise使用）</span>
     <span class="wow fadeInUp" data-wow-delay="0.4s"></span>
     <span class="wow fadeInUp" data-wow-delay="0.4s"></span>
     <span class="wow fadeInUp" data-wow-delay="0.6s">作者&nbsp;&nbsp;|&nbsp;&nbsp;路过音乐</span>
@@ -111,30 +111,30 @@ var _hmt = _hmt || [];
   <!-- 页面宽度大于800px -->
   <div class="left-area">
     
-      <a href="/entertain/2018/09/19/entertainv1.html" class="btn bounceInLeft animated" onmouseover="showLeft();this.style.color='rgb(255,210,32)';" onmouseout="goneLeft();this.style.color='rgba(0,0,0,.2)';"><</a>
-      <div id="left-tab" style="display:none;"><span class="left-san"></span><span class="left-main" style="color:rgb(255,210,32);"><sapn class="main">基于爬虫的娱乐推荐系统</sapn></span></div>
+      <a href="/myorigion/2018/12/29/signalprocessing.html" class="btn bounceInLeft animated" onmouseover="showLeft();this.style.color='rgb(255,210,32)';" onmouseout="goneLeft();this.style.color='rgba(0,0,0,.2)';"><</a>
+      <div id="left-tab" style="display:none;"><span class="left-san"></span><span class="left-main" style="color:rgb(255,210,32);"><sapn class="main">地震背景噪声处理（信号处理理论）</sapn></span></div>
     
   </div>
   <div class="post-titlearea">
-    <span class="wow fadeInUp" data-wow-delay="0.2s">创建博客历程（持续更新）</span>
+    <span class="wow fadeInUp" data-wow-delay="0.2s">地震背景噪声处理（MSnoise使用）</span>
     <!-- <span class="wow fadeInUp" data-wow-delay="0.4s"></span> -->
     <!-- <span class="wow fadeInUp" data-wow-delay="0.4s"></span> -->
     <!-- <span class="wow fadeInUp" data-wow-delay="0.6s">作者&nbsp;&nbsp;|&nbsp;&nbsp;路过音乐</span> -->
   </div>
   <div class="right-area">
     
-      <a href="javascript:;" class="btn bounceInRight self-animated" onmouseover="showRight();this.style.color='rgb(255,210,32)';" onmouseout="goneRight();this.style.color='rgba(0,0,0,.2)';">></a>
-      <div id="right-tab" style="display:none;"><span class="right-san"></span><span class="right-main" style="color:rgb(255,210,32);"><sapn class="main">没有下一页咯</sapn></span></div>
+      <a href="/myorigion/2018/11/16/DIAproject.html" class="btn bounceInRight self-animated" onmouseover="showRight();this.style.color='rgb(255,210,32)';" onmouseout="goneRight();this.style.color='rgba(0,0,0,.2)';">></a>
+      <div id="right-tab" style="display:none;"><span class="right-san"></span><span class="right-main" style="color:rgb(255,210,32);"><sapn class="main">DIA项目记录</sapn></span></div>
     
   </div>
 
   <!-- 页面宽度小于800px -->
   <div class="post-changearea">
     
-      <a href="/entertain/2018/09/19/entertainv1.html" class="leftchange" style="border-right: 1px solid rgb(255,210,32);border-bottom: 2px solid rgb(255,210,32);"><span>上一篇<br><br>基于爬虫的娱乐推荐系统</span></a>
+      <a href="/myorigion/2018/12/29/signalprocessing.html" class="leftchange" style="border-right: 1px solid rgb(255,210,32);border-bottom: 2px solid rgb(255,210,32);"><span>上一篇<br><br>地震背景噪声处理（信号处理理论）</span></a>
     
     
-      <a href="javascript:;" class="rightchange" style="border-left: 1px solid rgb(255,210,32);border-bottom: 2px solid rgb(255,210,32);"><span><br>没有下一篇咯</span></a>
+      <a href="/myorigion/2018/11/16/DIAproject.html" class="rightchange" style="border-left: 1px solid rgb(255,210,32);border-bottom: 2px solid rgb(255,210,32);"><span>下一篇<br><br>DIA项目记录</span></a>
     
   </div>
 </div>
@@ -145,18 +145,13 @@ var _hmt = _hmt || [];
   
 
   <!-- 文章内容 -->
-  <h2 id="创建博客--2018918--"><strong><em>创建博客</em></strong>  2018/9/18  <br /></h2>
-<p>1.在Github上创建新仓库，名字为<strong>[用户名].github.io</strong>  <br />
-2.了解并使用<a href="https://www.jekyll.com.cn/">Jekyll</a>  <br />
-3.修改模版，进行个性化设置  <br />
-参考链接：<a href="https://blog.csdn.net/lady_zhou/article/details/52041098" target="_blank">
-         (https://blog.csdn.net/lady_zhou/article/details/52041098)</a>                             <br />
-         <a href="https://blog.csdn.net/lady_zhou/article/details/52041098" target="_blank">      (https://blog.csdn.net/u013553529/article/details/54588010)</a><br />
-         <a href="https://blog.csdn.net/lady_zhou/article/details/52041098" target="_blank"> 
-        （https://github.com/xukimseven/HardCandy-Jekyll)</a><br /></p>
+  <p>本文记载毕业论文中关于《地震背景噪声监测地壳波速变化》的数据处理部分，主要用到python编写的<a href="http://www.msnoise.org">MSnoise库</a> <br /></p>
 
-<hr />
-
+<p>1.数据来源于IRIS，下载获得miniSEED格式（仅包含波形数据）和dataless SEED格式（仅包含台站元数据，可以提取仪器响应）数据，通过rdseed解压转换为SAC格式<br />
+2.按官网步骤将MSnoise安装完毕，建立新目录并通过bash执行msnoise install<br />
+3.msnoise提供网页浏览模式，通过msnoise admin命令并打开浏览器127.0.0.1:5000浏览，修改Configuration中的相应值，由于msnoise不支持此次数据的命名模式，需要修改Configuration标签下的data_structure，并在目录下编写custom.py，通过msnoise scan_archive导入数据后可在Database标签中查看<br />
+4.由于台站仪器可能不同，需要去除仪器响应，仪器响应原理比较复杂，可参考seisman博文<a href="https://blog.seisman.info/instrumental-response/">https://blog.seisman.info/instrumental-response/</a>及其相关文章，msnoise中可修改response_format和response_path选项将仪器响应文件放入指定路径<br />
+5.配置好后，依次执行msnoise new_jobs增加任务，msnoise compute_cc计算单日互相关，msnoise stack叠加指定天数的互相关，互相关结果存放于该目录下的STACKS文件夹</p>
 
 
 </div>

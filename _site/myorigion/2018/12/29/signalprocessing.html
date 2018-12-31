@@ -99,7 +99,7 @@ var _hmt = _hmt || [];
 <!-- 引入博文顶部样式 -->
 <!-- <!-- 版本一 垃圾 -->
 <!-- <div class="wow fadeIn top" data-wow-duration="3.5s" >
-    <span class="wow fadeInUp" data-wow-delay="0.2s">创建博客历程（持续更新）</span>
+    <span class="wow fadeInUp" data-wow-delay="0.2s">地震背景噪声处理（信号处理理论）</span>
     <span class="wow fadeInUp" data-wow-delay="0.4s"></span>
     <span class="wow fadeInUp" data-wow-delay="0.4s"></span>
     <span class="wow fadeInUp" data-wow-delay="0.6s">作者&nbsp;&nbsp;|&nbsp;&nbsp;路过音乐</span>
@@ -111,30 +111,30 @@ var _hmt = _hmt || [];
   <!-- 页面宽度大于800px -->
   <div class="left-area">
     
-      <a href="/entertain/2018/09/19/entertainv1.html" class="btn bounceInLeft animated" onmouseover="showLeft();this.style.color='rgb(255,210,32)';" onmouseout="goneLeft();this.style.color='rgba(0,0,0,.2)';"><</a>
-      <div id="left-tab" style="display:none;"><span class="left-san"></span><span class="left-main" style="color:rgb(255,210,32);"><sapn class="main">基于爬虫的娱乐推荐系统</sapn></span></div>
+      <a href="javascript:;" class="btn bounceInLeft animated" onmouseover="showLeft();this.style.color='rgb(255,210,32)';" onmouseout="goneLeft();this.style.color='rgba(0,0,0,.2)';"><</a>
+      <div id="left-tab" style="display:none;"><span class="left-san"></span><span class="left-main" style="color:rgb(255,210,32);"><sapn class="main">没有上一页咯</sapn></span></div>
     
   </div>
   <div class="post-titlearea">
-    <span class="wow fadeInUp" data-wow-delay="0.2s">创建博客历程（持续更新）</span>
+    <span class="wow fadeInUp" data-wow-delay="0.2s">地震背景噪声处理（信号处理理论）</span>
     <!-- <span class="wow fadeInUp" data-wow-delay="0.4s"></span> -->
     <!-- <span class="wow fadeInUp" data-wow-delay="0.4s"></span> -->
     <!-- <span class="wow fadeInUp" data-wow-delay="0.6s">作者&nbsp;&nbsp;|&nbsp;&nbsp;路过音乐</span> -->
   </div>
   <div class="right-area">
     
-      <a href="javascript:;" class="btn bounceInRight self-animated" onmouseover="showRight();this.style.color='rgb(255,210,32)';" onmouseout="goneRight();this.style.color='rgba(0,0,0,.2)';">></a>
-      <div id="right-tab" style="display:none;"><span class="right-san"></span><span class="right-main" style="color:rgb(255,210,32);"><sapn class="main">没有下一页咯</sapn></span></div>
+      <a href="/myorigion/2018/12/14/ambientnoise.html" class="btn bounceInRight self-animated" onmouseover="showRight();this.style.color='rgb(255,210,32)';" onmouseout="goneRight();this.style.color='rgba(0,0,0,.2)';">></a>
+      <div id="right-tab" style="display:none;"><span class="right-san"></span><span class="right-main" style="color:rgb(255,210,32);"><sapn class="main">地震背景噪声处理（MSnoise使用）</sapn></span></div>
     
   </div>
 
   <!-- 页面宽度小于800px -->
   <div class="post-changearea">
     
-      <a href="/entertain/2018/09/19/entertainv1.html" class="leftchange" style="border-right: 1px solid rgb(255,210,32);border-bottom: 2px solid rgb(255,210,32);"><span>上一篇<br><br>基于爬虫的娱乐推荐系统</span></a>
+      <a href="javascript:;" class="leftchange" style="border-right: 1px solid rgb(255,210,32);border-bottom: 2px solid rgb(255,210,32);"><span><br>没有上一篇咯</span></a>
     
     
-      <a href="javascript:;" class="rightchange" style="border-left: 1px solid rgb(255,210,32);border-bottom: 2px solid rgb(255,210,32);"><span><br>没有下一篇咯</span></a>
+      <a href="/myorigion/2018/12/14/ambientnoise.html" class="rightchange" style="border-left: 1px solid rgb(255,210,32);border-bottom: 2px solid rgb(255,210,32);"><span>下一篇<br><br>地震背景噪声处理（MSnoise使用）</span></a>
     
   </div>
 </div>
@@ -145,18 +145,64 @@ var _hmt = _hmt || [];
   
 
   <!-- 文章内容 -->
-  <h2 id="创建博客--2018918--"><strong><em>创建博客</em></strong>  2018/9/18  <br /></h2>
-<p>1.在Github上创建新仓库，名字为<strong>[用户名].github.io</strong>  <br />
-2.了解并使用<a href="https://www.jekyll.com.cn/">Jekyll</a>  <br />
-3.修改模版，进行个性化设置  <br />
-参考链接：<a href="https://blog.csdn.net/lady_zhou/article/details/52041098" target="_blank">
-         (https://blog.csdn.net/lady_zhou/article/details/52041098)</a>                             <br />
-         <a href="https://blog.csdn.net/lady_zhou/article/details/52041098" target="_blank">      (https://blog.csdn.net/u013553529/article/details/54588010)</a><br />
-         <a href="https://blog.csdn.net/lady_zhou/article/details/52041098" target="_blank"> 
-        （https://github.com/xukimseven/HardCandy-Jekyll)</a><br /></p>
+  <h4 id="前言">前言</h4>
 
-<hr />
+<p>最近一直在看信号处理的东西，希望能将地震背景噪声处理的更好，已有的论文有利用S变换，曲波变换，小波变换等对地震噪声做处理，尤其是应用在pws和tf-pws（Time-Frequency phase weighted stack）的公式推导中，今日又看到一个<a href="http://waveatom.org/">波原子变换</a>，甚是无解，又一直不太理解频率，尺度，相位，还有各种变换的联系和区别，故在这里做个总结。</p>
 
+<h3 id="1傅立叶变换fourier-transform">1.傅立叶变换（Fourier Transform）</h3>
+<p>傅立叶变换是将信号分解为不同频率正弦波的叠加，得到频率域信息</p>
+
+<p><img src="/assets/article_img/2018-12-19-signalprocessing-1.jpg" alt="fourier" /></p>
+
+<p>注：针对不同种类的信号共有四种基本傅里叶变换，分别是：针对连续周期信号的连续傅里叶级数(Continuous Fourier Series, CFS，一般直接简称为FS)、针对连续非周期信号的连续时间傅里叶变换(Continuous Time Fourier Transform, CTFT，一般直接简称为FT)、针对离散周期信号的离散傅里叶级数(Discrete Fourier Series, DFS)、针对离散非周期信号的离散时间傅里叶变换(Discrete Time Fourier Transform, DTFT)，这四种基本傅里叶变换都不适合计算机处理（要求时域和变换域均为离散的、有限长的），因此把DFS进行变形，取其时域和频域的主值区间定义出了离散傅里叶变换(Discrete Fourier Transform, DFT)，直接按照DFT公式计算的话计算量太大，于是就又有了各种快速计算方法，统称为快速傅里叶变换(Fast Fourier Transform, FFT)。</p>
+
+<p>傅立叶变换缺点：不能刻画时间域上信号的局部特性，只适用于确定性信号及平稳信号</p>
+
+<h3 id="2短时傅立叶变换short-time-fourier-transformstft">2.短时傅立叶变换（Short-time Fourier Transform,STFT）</h3>
+<p>傅立叶变换的时域是负无穷到正无穷，为了表现信号局部特性，通过<strong>加窗</strong>将信号分解为时域上的不同过程，得到频率域与时间域信息，属于时频分析</p>
+
+<p><img src="/assets/article_img/2018-12-19-signalprocessing-2.jpg" alt="short-time fourier" /></p>
+
+<p>g(s)表示窗函数，例如Gauss窗，Hanning窗，Hamming窗等等，当窗函数选择高斯窗，所得变换称为Gabor变换</p>
+
+<p>短时傅立叶变换缺点：窗口一旦固定，不能完全表现突变信号与非平稳信号，对于时变的非稳信号，高频适合小窗口，低频适合大窗口</p>
+
+<h3 id="3小波变换wavelet-transform">3.小波变换（wavelet transform）</h3>
+<p>小波变换将傅立叶变换的三角函数基换成了有限长的会衰减的小波基（Haar小波，db小波，morl小波等），这个基函数会伸缩、会平移，属于时频分析</p>
+
+<p><img src="/assets/article_img/2018-12-19-signalprocessing-3.jpg" alt="wavelet" /></p>
+
+<p>小波变换有两个变量：尺度a（控制小波伸缩）和平移量 τ（控制小波平移）</p>
+
+<p>小波变换缺点：不能“最优”表示含线或者面奇异的高维函数，但事实上具有线或面奇异的函数在高维空间中非常普遍</p>
+
+<h3 id="4曲波变换curvelet-transform">4.曲波变换（curvelet transform）</h3>
+<p>曲波变换与小波变换相似，采用基函数与信号的内积实现信号的稀疏表示，可以最优表示高维空间函数</p>
+
+<p><img src="/assets/article_img/2018-12-19-signalprocessing-4.jpg" alt="curvelet" /></p>
+
+<p>下标j,l,k分别表示尺度、方向和位置向量</p>
+
+<h3 id="其他">其他</h3>
+
+<p>1.与曲波变换类似的还有脊波Ridgelet、轮廓波Contourlet、条带波Bandelet、楔波Wedgelet、小线Beamlet</p>
+
+<p>2.小波包变换——小波分析是只对低频部分进行分解,分解成低频、高频两部分；小波包分解对低频和高频部分都进行分解</p>
+
+<p><img src="/assets/article_img/2018-12-19-signalprocessing-5.jpg" alt="wavelet packet" /></p>
+
+<p>3.S变换（Stockwell transform）采用高斯窗函数且窗宽与频率的倒数成正比,它的特别之处在于它既保持与傅里叶变换的直接关系，又可在不同频率有不同的分辨率。
+<img src="/assets/article_img/2018-12-19-signalprocessing-6.jpg" alt="stockwell" /></p>
+
+<p>4.希尔伯特变换，信号经希尔伯特变换后，在频域各频率分量的幅度保持不变，但相位将出现90°相移
+<img src="/assets/article_img/2018-12-19-signalprocessing-7.jpg" alt="hilbert" /></p>
+
+<p>5.解析信号（analytic signal），在能量不变的前提下，利用希尔伯特变换构造一个虚部，使之只有正频谱，可以用来估计瞬时频率(瞬时频率为相位的微分)</p>
+
+<p><img src="/assets/article_img/2018-12-19-signalprocessing-8.jpg" alt="analytic" /></p>
+
+<p><strong><em>最后是网上看到的一副关系图</em></strong>  (其中有波原子变换)
+<img src="/assets/article_img/2018-12-19-signalprocessing-9.jpg" alt="wavebasis" /></p>
 
 
 </div>

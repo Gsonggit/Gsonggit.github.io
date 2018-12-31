@@ -1,4 +1,90 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-31T23:35:24+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">路过音乐的博客</title><author><name>true</name></author><entry><title type="html">Linux常用命令大全（转）</title><link href="http://localhost:4000/otherclassical/2018/10/30/linux.html" rel="alternate" type="text/html" title="Linux常用命令大全（转）" /><published>2018-10-30T00:00:00+08:00</published><updated>2018-10-30T00:00:00+08:00</updated><id>http://localhost:4000/otherclassical/2018/10/30/linux</id><content type="html" xml:base="http://localhost:4000/otherclassical/2018/10/30/linux.html">&lt;p&gt;常和ubuntu打交道，但是有些命令还是记不住，老是需要去查，现在网上找到一份常用命令和解释，以作参考：&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-12-31T11:18:29+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">路过音乐的博客</title><author><name>true</name></author><entry><title type="html">地震背景噪声处理（信号处理理论）</title><link href="http://localhost:4000/myorigion/2018/12/29/signalprocessing.html" rel="alternate" type="text/html" title="地震背景噪声处理（信号处理理论）" /><published>2018-12-29T00:00:00+08:00</published><updated>2018-12-29T00:00:00+08:00</updated><id>http://localhost:4000/myorigion/2018/12/29/signalprocessing</id><content type="html" xml:base="http://localhost:4000/myorigion/2018/12/29/signalprocessing.html">&lt;h4 id=&quot;前言&quot;&gt;前言&lt;/h4&gt;
+
+&lt;p&gt;最近一直在看信号处理的东西，希望能将地震背景噪声处理的更好，已有的论文有利用S变换，曲波变换，小波变换等对地震噪声做处理，尤其是应用在pws和tf-pws（Time-Frequency phase weighted stack）的公式推导中，今日又看到一个&lt;a href=&quot;http://waveatom.org/&quot;&gt;波原子变换&lt;/a&gt;，甚是无解，又一直不太理解频率，尺度，相位，还有各种变换的联系和区别，故在这里做个总结。&lt;/p&gt;
+
+&lt;h3 id=&quot;1傅立叶变换fourier-transform&quot;&gt;1.傅立叶变换（Fourier Transform）&lt;/h3&gt;
+&lt;p&gt;傅立叶变换是将信号分解为不同频率正弦波的叠加，得到频率域信息&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/article_img/2018-12-19-signalprocessing-1.jpg&quot; alt=&quot;fourier&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;注：针对不同种类的信号共有四种基本傅里叶变换，分别是：针对连续周期信号的连续傅里叶级数(Continuous Fourier Series, CFS，一般直接简称为FS)、针对连续非周期信号的连续时间傅里叶变换(Continuous Time Fourier Transform, CTFT，一般直接简称为FT)、针对离散周期信号的离散傅里叶级数(Discrete Fourier Series, DFS)、针对离散非周期信号的离散时间傅里叶变换(Discrete Time Fourier Transform, DTFT)，这四种基本傅里叶变换都不适合计算机处理（要求时域和变换域均为离散的、有限长的），因此把DFS进行变形，取其时域和频域的主值区间定义出了离散傅里叶变换(Discrete Fourier Transform, DFT)，直接按照DFT公式计算的话计算量太大，于是就又有了各种快速计算方法，统称为快速傅里叶变换(Fast Fourier Transform, FFT)。&lt;/p&gt;
+
+&lt;p&gt;傅立叶变换缺点：不能刻画时间域上信号的局部特性，只适用于确定性信号及平稳信号&lt;/p&gt;
+
+&lt;h3 id=&quot;2短时傅立叶变换short-time-fourier-transformstft&quot;&gt;2.短时傅立叶变换（Short-time Fourier Transform,STFT）&lt;/h3&gt;
+&lt;p&gt;傅立叶变换的时域是负无穷到正无穷，为了表现信号局部特性，通过&lt;strong&gt;加窗&lt;/strong&gt;将信号分解为时域上的不同过程，得到频率域与时间域信息，属于时频分析&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/article_img/2018-12-19-signalprocessing-2.jpg&quot; alt=&quot;short-time fourier&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;g(s)表示窗函数，例如Gauss窗，Hanning窗，Hamming窗等等，当窗函数选择高斯窗，所得变换称为Gabor变换&lt;/p&gt;
+
+&lt;p&gt;短时傅立叶变换缺点：窗口一旦固定，不能完全表现突变信号与非平稳信号，对于时变的非稳信号，高频适合小窗口，低频适合大窗口&lt;/p&gt;
+
+&lt;h3 id=&quot;3小波变换wavelet-transform&quot;&gt;3.小波变换（wavelet transform）&lt;/h3&gt;
+&lt;p&gt;小波变换将傅立叶变换的三角函数基换成了有限长的会衰减的小波基（Haar小波，db小波，morl小波等），这个基函数会伸缩、会平移，属于时频分析&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/article_img/2018-12-19-signalprocessing-3.jpg&quot; alt=&quot;wavelet&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;小波变换有两个变量：尺度a（控制小波伸缩）和平移量 τ（控制小波平移）&lt;/p&gt;
+
+&lt;p&gt;小波变换缺点：不能“最优”表示含线或者面奇异的高维函数，但事实上具有线或面奇异的函数在高维空间中非常普遍&lt;/p&gt;
+
+&lt;h3 id=&quot;4曲波变换curvelet-transform&quot;&gt;4.曲波变换（curvelet transform）&lt;/h3&gt;
+&lt;p&gt;曲波变换与小波变换相似，采用基函数与信号的内积实现信号的稀疏表示，可以最优表示高维空间函数&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/article_img/2018-12-19-signalprocessing-4.jpg&quot; alt=&quot;curvelet&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;下标j,l,k分别表示尺度、方向和位置向量&lt;/p&gt;
+
+&lt;h3 id=&quot;其他&quot;&gt;其他&lt;/h3&gt;
+
+&lt;p&gt;1.与曲波变换类似的还有脊波Ridgelet、轮廓波Contourlet、条带波Bandelet、楔波Wedgelet、小线Beamlet&lt;/p&gt;
+
+&lt;p&gt;2.小波包变换——小波分析是只对低频部分进行分解,分解成低频、高频两部分；小波包分解对低频和高频部分都进行分解&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/article_img/2018-12-19-signalprocessing-5.jpg&quot; alt=&quot;wavelet packet&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;3.S变换（Stockwell transform）采用高斯窗函数且窗宽与频率的倒数成正比,它的特别之处在于它既保持与傅里叶变换的直接关系，又可在不同频率有不同的分辨率。
+&lt;img src=&quot;/assets/article_img/2018-12-19-signalprocessing-6.jpg&quot; alt=&quot;stockwell&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;4.希尔伯特变换，信号经希尔伯特变换后，在频域各频率分量的幅度保持不变，但相位将出现90°相移
+&lt;img src=&quot;/assets/article_img/2018-12-19-signalprocessing-7.jpg&quot; alt=&quot;hilbert&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;5.解析信号（analytic signal），在能量不变的前提下，利用希尔伯特变换构造一个虚部，使之只有正频谱，可以用来估计瞬时频率(瞬时频率为相位的微分)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/article_img/2018-12-19-signalprocessing-8.jpg&quot; alt=&quot;analytic&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;最后是网上看到的一副关系图&lt;/em&gt;&lt;/strong&gt;  (其中有波原子变换)
+&lt;img src=&quot;/assets/article_img/2018-12-19-signalprocessing-9.jpg&quot; alt=&quot;wavebasis&quot; /&gt;&lt;/p&gt;</content><author><name>路过音乐</name></author><category term="地震学" /><category term="背景噪声" /><category term="信号处理" /><summary type="html">前言</summary></entry><entry><title type="html">地震背景噪声处理（MSnoise使用）</title><link href="http://localhost:4000/myorigion/2018/12/14/ambientnoise.html" rel="alternate" type="text/html" title="地震背景噪声处理（MSnoise使用）" /><published>2018-12-14T00:00:00+08:00</published><updated>2018-12-14T00:00:00+08:00</updated><id>http://localhost:4000/myorigion/2018/12/14/ambientnoise</id><content type="html" xml:base="http://localhost:4000/myorigion/2018/12/14/ambientnoise.html">&lt;p&gt;本文记载毕业论文中关于《地震背景噪声监测地壳波速变化》的数据处理部分，主要用到python编写的&lt;a href=&quot;http://www.msnoise.org&quot;&gt;MSnoise库&lt;/a&gt; &lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;1.数据来源于IRIS，下载获得miniSEED格式（仅包含波形数据）和dataless SEED格式（仅包含台站元数据，可以提取仪器响应）数据，通过rdseed解压转换为SAC格式&lt;br /&gt;
+2.按官网步骤将MSnoise安装完毕，建立新目录并通过bash执行msnoise install&lt;br /&gt;
+3.msnoise提供网页浏览模式，通过msnoise admin命令并打开浏览器127.0.0.1:5000浏览，修改Configuration中的相应值，由于msnoise不支持此次数据的命名模式，需要修改Configuration标签下的data_structure，并在目录下编写custom.py，通过msnoise scan_archive导入数据后可在Database标签中查看&lt;br /&gt;
+4.由于台站仪器可能不同，需要去除仪器响应，仪器响应原理比较复杂，可参考seisman博文&lt;a href=&quot;https://blog.seisman.info/instrumental-response/&quot;&gt;https://blog.seisman.info/instrumental-response/&lt;/a&gt;及其相关文章，msnoise中可修改response_format和response_path选项将仪器响应文件放入指定路径&lt;br /&gt;
+5.配置好后，依次执行msnoise new_jobs增加任务，msnoise compute_cc计算单日互相关，msnoise stack叠加指定天数的互相关，互相关结果存放于该目录下的STACKS文件夹&lt;/p&gt;</content><author><name>路过音乐</name></author><category term="地震学" /><category term="背景噪声" /><summary type="html">本文记载毕业论文中关于《地震背景噪声监测地壳波速变化》的数据处理部分，主要用到python编写的MSnoise库</summary></entry><entry><title type="html">DIA项目记录</title><link href="http://localhost:4000/myorigion/2018/11/16/DIAproject.html" rel="alternate" type="text/html" title="DIA项目记录" /><published>2018-11-16T00:00:00+08:00</published><updated>2018-11-16T00:00:00+08:00</updated><id>http://localhost:4000/myorigion/2018/11/16/DIAproject</id><content type="html" xml:base="http://localhost:4000/myorigion/2018/11/16/DIAproject.html">&lt;h2 id=&quot;前言-&quot;&gt;前言 &lt;br /&gt;&lt;/h2&gt;
+&lt;p&gt;一直想做个项目，名字为DiveIntoAmusement(DIA),项目地址在&lt;a href=&quot;http://www.lgyysblog.com/entertain/2018/09/19/entertainv1.html&quot;&gt;另一篇博客&lt;/a&gt;，原定目标是:&lt;br /&gt;
+1.搜索。利用用户关键词爬虫综合爬取相关信息    &lt;br /&gt;
+2.推荐。利用用户记录训练模型利用ACL算法推荐  &lt;br /&gt;
+涉及的方面还挺多的，前端、爬虫、数据库、推荐算法等  &lt;br /&gt;
+此博客用于记录项目过程遇到的大问题及解决办法  &lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;1前端-&quot;&gt;[1]前端 &lt;br /&gt;&lt;/h2&gt;
+&lt;h4 id=&quot;1想在网页加入iframe但是显示空白-&quot;&gt;1.想在网页加入iframe，但是显示空白 &lt;br /&gt;&lt;/h4&gt;
+&lt;p&gt;我遇到2种情况，&lt;br /&gt;
+1是默认博客使用https协议而iframe目标网页使用http，会提示不能访问http的资源，故使用此项目在iframe中查看结果须用http访问；&lt;br /&gt;
+2是需要修改iframe目标网页服务器设置，使得网页可以被其他网站引用，例如本项目Django中setting将XFrameOptions中间件注释掉&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;2爬虫--&quot;&gt;[2]爬虫  &lt;br /&gt;&lt;/h2&gt;
+&lt;h4 id=&quot;1scrapy爬虫出现forbidden-by-robotstxt--&quot;&gt;1.scrapy爬虫出现forbidden by robots.txt  &lt;br /&gt;&lt;/h4&gt;
+&lt;p&gt;scrapy会默认遵守待爬网址robot.txt的爬取规范，只需在scrapy的setting中将ROBOTSTXT_OBEY 设定为 False即可	&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;2scrapy中使用xpath路径得到空内容-&quot;&gt;2.scrapy中使用Xpath路径得到空内容 &lt;br /&gt;&lt;/h4&gt;
+&lt;p&gt;scrapy爬取的和浏览器中显示的Xpath路径可能不一致，因为scrapy爬取的是网页源代码，需要直接查看网页源代码，再确定Xpath&lt;/p&gt;
+
+&lt;h2 id=&quot;3数据库&quot;&gt;[3]数据库&lt;/h2&gt;
+
+&lt;h2 id=&quot;4推荐算法&quot;&gt;[4]推荐算法&lt;/h2&gt;
+
+&lt;h2 id=&quot;5其他&quot;&gt;[5]其他&lt;/h2&gt;</content><author><name>路过音乐</name></author><category term="DIA" /><category term="scrapy" /><category term="python" /><summary type="html">前言 一直想做个项目，名字为DiveIntoAmusement(DIA),项目地址在另一篇博客，原定目标是: 1.搜索。利用用户关键词爬虫综合爬取相关信息 2.推荐。利用用户记录训练模型利用ACL算法推荐 涉及的方面还挺多的，前端、爬虫、数据库、推荐算法等 此博客用于记录项目过程遇到的大问题及解决办法</summary></entry><entry><title type="html">Linux常用命令大全（转）</title><link href="http://localhost:4000/otherclassical/2018/10/30/linux.html" rel="alternate" type="text/html" title="Linux常用命令大全（转）" /><published>2018-10-30T00:00:00+08:00</published><updated>2018-10-30T00:00:00+08:00</updated><id>http://localhost:4000/otherclassical/2018/10/30/linux</id><content type="html" xml:base="http://localhost:4000/otherclassical/2018/10/30/linux.html">&lt;p&gt;常和ubuntu打交道，但是有些命令还是记不住，老是需要去查，现在网上找到一份常用命令和解释，以作参考：&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -330,10 +416,10 @@ hostname 显示主机地址&lt;br /&gt;&lt;/p&gt;
                         &lt;td&gt;关键词&lt;input type=&quot;text&quot; name='keywords' placeholder=&quot;以空格分开&quot;&gt;&lt;/td&gt;
                     &lt;/tr&gt;
                     &lt;tr&gt;
-                        &lt;td&gt;说明&lt;p&gt;afdfafsaafdafdaffaaafaafa&lt;/p&gt;&lt;/td&gt;
+                        &lt;td&gt;说明&lt;p&gt;利用Scrapy爬虫爬取不同网站信息并整合，若右边结果区空白，需改用http访问本网页&lt;/p&gt;&lt;/td&gt;
                     &lt;/tr&gt;
                     &lt;tr&gt;
-                        &lt;td style='text-align: right'&gt;&lt;input type=&quot;submit&quot; target=&quot;fram1&quot; value=&quot;开始推荐&quot;&gt;&lt;/td&gt;
+                        &lt;td style='text-align: right'&gt;&lt;input type=&quot;submit&quot; target=&quot;fram1&quot; name=&quot;res1&quot; value=&quot;开始搜索&quot;&gt;&lt;input type=&quot;submit&quot; target=&quot;fram1&quot; name=&quot;res2&quot; value=&quot;开始推荐&quot;&gt;&lt;/td&gt;
                     &lt;/tr&gt;
                 &lt;/table&gt;
             &lt;/fieldset&gt;
@@ -341,14 +427,12 @@ hostname 显示主机地址&lt;br /&gt;&lt;/p&gt;
 
     &lt;/div&gt;
     &lt;div class=&quot;Outform&quot; style=&quot;float:right&quot;&gt;
+            &lt;p&gt;结果页面&lt;/p&gt;
+            &lt;iframe name=&quot;fram1&quot; src=&quot;http://119.29.230.61:7777/DIAproject&quot; height=&quot;550&quot; width=&quot;550&quot; style=&quot;display:inline-block&quot;&gt;&lt;/iframe&gt;
 
-            &lt;iframe name=&quot;fram1&quot; src=&quot;http://119.29.230.61:7777/DIAproject&quot; height=&quot;450&quot; width=&quot;550&quot; style=&quot;display:inline-block&quot;&gt;&lt;/iframe&gt;
-            &lt;form action=&quot;/&quot; method=&quot;POST&quot;&gt;
-                &lt;input type=&quot;submit&quot; value=&quot;查看详细&quot;&gt;   &lt;input type=&quot;submit&quot; value=&quot;再次推荐&quot;&gt;
-            &lt;/form&gt;
     &lt;/div&gt;
 
-&lt;/main&gt;</content><author><name>路过音乐</name></author><category term="个人项目" /><category term="scrapy" /><category term="推荐算法" /><summary type="html">欢迎使用娱乐推荐系统 , 当前正在使用： 0 人 类型 电影 游戏 音乐 电视剧 小说 关键词 说明afdfafsaafdafdaffaaafaafa</summary></entry><entry><title type="html">创建博客历程（持续更新）</title><link href="http://localhost:4000/myorigion/2018/09/18/createblog.html" rel="alternate" type="text/html" title="创建博客历程（持续更新）" /><published>2018-09-18T00:00:00+08:00</published><updated>2018-09-18T00:00:00+08:00</updated><id>http://localhost:4000/myorigion/2018/09/18/createblog</id><content type="html" xml:base="http://localhost:4000/myorigion/2018/09/18/createblog.html">&lt;h2 id=&quot;创建博客--2018918--&quot;&gt;&lt;strong&gt;&lt;em&gt;创建博客&lt;/em&gt;&lt;/strong&gt;  2018/9/18  &lt;br /&gt;&lt;/h2&gt;
+&lt;/main&gt;</content><author><name>路过音乐</name></author><category term="个人项目" /><category term="scrapy" /><category term="推荐算法" /><summary type="html">欢迎使用娱乐推荐系统 , 当前正在使用： 0 人 类型 电影 游戏 音乐 电视剧 小说 关键词 说明利用Scrapy爬虫爬取不同网站信息并整合，若右边结果区空白，需改用http访问本网页</summary></entry><entry><title type="html">创建博客历程（持续更新）</title><link href="http://localhost:4000/myorigion/2018/09/18/createblog.html" rel="alternate" type="text/html" title="创建博客历程（持续更新）" /><published>2018-09-18T00:00:00+08:00</published><updated>2018-09-18T00:00:00+08:00</updated><id>http://localhost:4000/myorigion/2018/09/18/createblog</id><content type="html" xml:base="http://localhost:4000/myorigion/2018/09/18/createblog.html">&lt;h2 id=&quot;创建博客--2018918--&quot;&gt;&lt;strong&gt;&lt;em&gt;创建博客&lt;/em&gt;&lt;/strong&gt;  2018/9/18  &lt;br /&gt;&lt;/h2&gt;
 &lt;p&gt;1.在Github上创建新仓库，名字为&lt;strong&gt;[用户名].github.io&lt;/strong&gt;  &lt;br /&gt;
 2.了解并使用&lt;a href=&quot;https://www.jekyll.com.cn/&quot;&gt;Jekyll&lt;/a&gt;  &lt;br /&gt;
 3.修改模版，进行个性化设置  &lt;br /&gt;
@@ -356,4 +440,6 @@ hostname 显示主机地址&lt;br /&gt;&lt;/p&gt;
          (https://blog.csdn.net/lady_zhou/article/details/52041098)&lt;/a&gt;                             &lt;br /&gt;
          &lt;a href=&quot;https://blog.csdn.net/lady_zhou/article/details/52041098&quot; target=&quot;_blank&quot;&gt;      (https://blog.csdn.net/u013553529/article/details/54588010)&lt;/a&gt;&lt;br /&gt;
          &lt;a href=&quot;https://blog.csdn.net/lady_zhou/article/details/52041098&quot; target=&quot;_blank&quot;&gt; 
-        （https://github.com/xukimseven/HardCandy-Jekyll)&lt;/a&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name>路过音乐</name></author><category term="Github" /><category term="blog" /><summary type="html">创建博客 2018/9/18 1.在Github上创建新仓库，名字为[用户名].github.io 2.了解并使用Jekyll 3.修改模版，进行个性化设置 参考链接： (https://blog.csdn.net/lady_zhou/article/details/52041098) (https://blog.csdn.net/u013553529/article/details/54588010) （https://github.com/xukimseven/HardCandy-Jekyll)</summary></entry></feed>
+        （https://github.com/xukimseven/HardCandy-Jekyll)&lt;/a&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;</content><author><name>路过音乐</name></author><category term="Github" /><category term="blog" /><summary type="html">创建博客 2018/9/18 1.在Github上创建新仓库，名字为[用户名].github.io 2.了解并使用Jekyll 3.修改模版，进行个性化设置 参考链接： (https://blog.csdn.net/lady_zhou/article/details/52041098) (https://blog.csdn.net/u013553529/article/details/54588010) （https://github.com/xukimseven/HardCandy-Jekyll)</summary></entry></feed>

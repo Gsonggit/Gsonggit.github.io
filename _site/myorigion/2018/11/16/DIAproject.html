@@ -99,7 +99,7 @@ var _hmt = _hmt || [];
 <!-- 引入博文顶部样式 -->
 <!-- <!-- 版本一 垃圾 -->
 <!-- <div class="wow fadeIn top" data-wow-duration="3.5s" >
-    <span class="wow fadeInUp" data-wow-delay="0.2s">创建博客历程（持续更新）</span>
+    <span class="wow fadeInUp" data-wow-delay="0.2s">DIA项目记录</span>
     <span class="wow fadeInUp" data-wow-delay="0.4s"></span>
     <span class="wow fadeInUp" data-wow-delay="0.4s"></span>
     <span class="wow fadeInUp" data-wow-delay="0.6s">作者&nbsp;&nbsp;|&nbsp;&nbsp;路过音乐</span>
@@ -111,30 +111,30 @@ var _hmt = _hmt || [];
   <!-- 页面宽度大于800px -->
   <div class="left-area">
     
-      <a href="/entertain/2018/09/19/entertainv1.html" class="btn bounceInLeft animated" onmouseover="showLeft();this.style.color='rgb(255,210,32)';" onmouseout="goneLeft();this.style.color='rgba(0,0,0,.2)';"><</a>
-      <div id="left-tab" style="display:none;"><span class="left-san"></span><span class="left-main" style="color:rgb(255,210,32);"><sapn class="main">基于爬虫的娱乐推荐系统</sapn></span></div>
+      <a href="/myorigion/2018/12/14/ambientnoise.html" class="btn bounceInLeft animated" onmouseover="showLeft();this.style.color='rgb(255,210,32)';" onmouseout="goneLeft();this.style.color='rgba(0,0,0,.2)';"><</a>
+      <div id="left-tab" style="display:none;"><span class="left-san"></span><span class="left-main" style="color:rgb(255,210,32);"><sapn class="main">地震背景噪声处理（MSnoise使用）</sapn></span></div>
     
   </div>
   <div class="post-titlearea">
-    <span class="wow fadeInUp" data-wow-delay="0.2s">创建博客历程（持续更新）</span>
+    <span class="wow fadeInUp" data-wow-delay="0.2s">DIA项目记录</span>
     <!-- <span class="wow fadeInUp" data-wow-delay="0.4s"></span> -->
     <!-- <span class="wow fadeInUp" data-wow-delay="0.4s"></span> -->
     <!-- <span class="wow fadeInUp" data-wow-delay="0.6s">作者&nbsp;&nbsp;|&nbsp;&nbsp;路过音乐</span> -->
   </div>
   <div class="right-area">
     
-      <a href="javascript:;" class="btn bounceInRight self-animated" onmouseover="showRight();this.style.color='rgb(255,210,32)';" onmouseout="goneRight();this.style.color='rgba(0,0,0,.2)';">></a>
-      <div id="right-tab" style="display:none;"><span class="right-san"></span><span class="right-main" style="color:rgb(255,210,32);"><sapn class="main">没有下一页咯</sapn></span></div>
+      <a href="/otherclassical/2018/10/30/linux.html" class="btn bounceInRight self-animated" onmouseover="showRight();this.style.color='rgb(255,210,32)';" onmouseout="goneRight();this.style.color='rgba(0,0,0,.2)';">></a>
+      <div id="right-tab" style="display:none;"><span class="right-san"></span><span class="right-main" style="color:rgb(255,210,32);"><sapn class="main">Linux常用命令大全（转）</sapn></span></div>
     
   </div>
 
   <!-- 页面宽度小于800px -->
   <div class="post-changearea">
     
-      <a href="/entertain/2018/09/19/entertainv1.html" class="leftchange" style="border-right: 1px solid rgb(255,210,32);border-bottom: 2px solid rgb(255,210,32);"><span>上一篇<br><br>基于爬虫的娱乐推荐系统</span></a>
+      <a href="/myorigion/2018/12/14/ambientnoise.html" class="leftchange" style="border-right: 1px solid rgb(255,210,32);border-bottom: 2px solid rgb(255,210,32);"><span>上一篇<br><br>地震背景噪声处理（MSnoise使用）</span></a>
     
     
-      <a href="javascript:;" class="rightchange" style="border-left: 1px solid rgb(255,210,32);border-bottom: 2px solid rgb(255,210,32);"><span><br>没有下一篇咯</span></a>
+      <a href="/otherclassical/2018/10/30/linux.html" class="rightchange" style="border-left: 1px solid rgb(255,210,32);border-bottom: 2px solid rgb(255,210,32);"><span>下一篇<br><br>Linux常用命令大全（转）</span></a>
     
   </div>
 </div>
@@ -145,18 +145,30 @@ var _hmt = _hmt || [];
   
 
   <!-- 文章内容 -->
-  <h2 id="创建博客--2018918--"><strong><em>创建博客</em></strong>  2018/9/18  <br /></h2>
-<p>1.在Github上创建新仓库，名字为<strong>[用户名].github.io</strong>  <br />
-2.了解并使用<a href="https://www.jekyll.com.cn/">Jekyll</a>  <br />
-3.修改模版，进行个性化设置  <br />
-参考链接：<a href="https://blog.csdn.net/lady_zhou/article/details/52041098" target="_blank">
-         (https://blog.csdn.net/lady_zhou/article/details/52041098)</a>                             <br />
-         <a href="https://blog.csdn.net/lady_zhou/article/details/52041098" target="_blank">      (https://blog.csdn.net/u013553529/article/details/54588010)</a><br />
-         <a href="https://blog.csdn.net/lady_zhou/article/details/52041098" target="_blank"> 
-        （https://github.com/xukimseven/HardCandy-Jekyll)</a><br /></p>
+  <h2 id="前言-">前言 <br /></h2>
+<p>一直想做个项目，名字为DiveIntoAmusement(DIA),项目地址在<a href="http://www.lgyysblog.com/entertain/2018/09/19/entertainv1.html">另一篇博客</a>，原定目标是:<br />
+1.搜索。利用用户关键词爬虫综合爬取相关信息    <br />
+2.推荐。利用用户记录训练模型利用ACL算法推荐  <br />
+涉及的方面还挺多的，前端、爬虫、数据库、推荐算法等  <br />
+此博客用于记录项目过程遇到的大问题及解决办法  <br /></p>
 
-<hr />
+<h2 id="1前端-">[1]前端 <br /></h2>
+<h4 id="1想在网页加入iframe但是显示空白-">1.想在网页加入iframe，但是显示空白 <br /></h4>
+<p>我遇到2种情况，<br />
+1是默认博客使用https协议而iframe目标网页使用http，会提示不能访问http的资源，故使用此项目在iframe中查看结果须用http访问；<br />
+2是需要修改iframe目标网页服务器设置，使得网页可以被其他网站引用，例如本项目Django中setting将XFrameOptions中间件注释掉<br /></p>
 
+<h2 id="2爬虫--">[2]爬虫  <br /></h2>
+<h4 id="1scrapy爬虫出现forbidden-by-robotstxt--">1.scrapy爬虫出现forbidden by robots.txt  <br /></h4>
+<p>scrapy会默认遵守待爬网址robot.txt的爬取规范，只需在scrapy的setting中将ROBOTSTXT_OBEY 设定为 False即可	<br /></p>
+<h4 id="2scrapy中使用xpath路径得到空内容-">2.scrapy中使用Xpath路径得到空内容 <br /></h4>
+<p>scrapy爬取的和浏览器中显示的Xpath路径可能不一致，因为scrapy爬取的是网页源代码，需要直接查看网页源代码，再确定Xpath</p>
+
+<h2 id="3数据库">[3]数据库</h2>
+
+<h2 id="4推荐算法">[4]推荐算法</h2>
+
+<h2 id="5其他">[5]其他</h2>
 
 
 </div>

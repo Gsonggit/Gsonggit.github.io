@@ -165,10 +165,10 @@ var _hmt = _hmt || [];
                         <td>关键词<input type="text" name='keywords' placeholder="以空格分开"></td>
                     </tr>
                     <tr>
-                        <td>说明<p>afdfafsaafdafdaffaaafaafa</p></td>
+                        <td>说明<p>利用Scrapy爬虫爬取不同网站信息并整合，若右边结果区空白，需改用http访问本网页</p></td>
                     </tr>
                     <tr>
-                        <td style='text-align: right'><input type="submit" target="fram1" value="开始推荐"></td>
+                        <td style='text-align: right'><input type="submit" target="fram1" name="res1" value="开始搜索"><input type="submit" target="fram1" name="res2" value="开始推荐"></td>
                     </tr>
                 </table>
             </fieldset>
@@ -176,11 +176,9 @@ var _hmt = _hmt || [];
 
     </div>
     <div class="Outform" style="float:right">
+            <p>结果页面</p>
+            <iframe name="fram1" src="http://119.29.230.61:7777/DIAproject" height="550" width="550" style="display:inline-block"></iframe>
 
-            <iframe name="fram1" src="http://119.29.230.61:7777/DIAproject" height="450" width="550" style="display:inline-block"></iframe>
-            <form action="/" method="POST">
-                <input type="submit" value="查看详细">   <input type="submit" value="再次推荐">
-            </form>
     </div>
 
 </main>
