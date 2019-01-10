@@ -20,5 +20,7 @@ tags: Github blog
          <a href='https://blog.csdn.net/lady_zhou/article/details/52041098' target="_blank"> 
         （https://github.com/xukimseven/HardCandy-Jekyll)</a><br>
 
+***增加归档功能***  2019/1/10  
 ---
-
+参考链接：<a href='https://github.com/xukimseven/HardCandy-Jekyll/blob/master/timeline.html' target="_blank">
+         (https://github.com/xukimseven/HardCandy-Jekyll/blob/master/timeline.html)</a>

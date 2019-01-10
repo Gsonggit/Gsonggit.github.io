@@ -323,7 +323,7 @@ a{
 .ex-list li{
     list-style: none;
     display: block;
-    height: 450px;
+    height: auto;
     width: 720px;
     margin: 70px auto 100px;
     background-color: white;
