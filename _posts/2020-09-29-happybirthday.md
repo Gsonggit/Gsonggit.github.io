@@ -11,4 +11,4 @@ tags: Web birthday
 <center>以此献给我的女友，祝你生日快乐😄😄😄</center>  
 
 
-![birthday](/assets/article_img/2020-09-28-birthdaybg.jpg)(https://gsonggit.github.io/entertain/2020/09/28/happybirthday.html)
+<a href="https://gsonggit.github.io/entertain/2020/09/28/happybirthday.html"><img src="/assets/article_img/2020-09-29-birthdaybg.jpg"></a>
